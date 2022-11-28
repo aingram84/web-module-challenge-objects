@@ -23,7 +23,7 @@ describe('fooFunction', ()=>{
 
 describe('createMenuItem', ()=>{
     it('createMenuItem returns object', ()=>{
-        expect(functions.createMenuItem('taco', 8, 'lunch')).toEqual({name: 'taco', price: 8, category:'lunch'});
+        expect(functions.createMenuItem('taco', 8, 'lunch')).toEqual({name: 'taco', price: 8, category: 'lunch'});
     })
 });
 

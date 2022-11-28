@@ -15,10 +15,15 @@ The function should:
   Example createMenuItem('tacos', 8, 'Lunch') should return {name: 'tacos', price: 8, category: 'Lunch'}
 */
 
-
-function createMenuItem(/*Your code here*/){
-  /*Your code here*/
+function createMenuItem(foodName, foodPrice, foodCat){
+  var newFood = {};
+  newFood.name = foodName;
+  newFood.price = foodPrice;
+  newFood.category = foodCat;
+  return newFood;
 }
+
+
 
 
 
@@ -51,8 +56,23 @@ const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
-  
-}
+
+  discount(cat) {
+    if (cat == 'teacher') {
+      this.price = 13.5;
+    }
+    else if (cat == 'student') {
+      this.price = 13.5;
+    }
+    else {
+    this.price = 16.2;
+    }
+    return this.price;
+  }
+};
+console.log(burger.discount("public"));
+
+
 
 
 
