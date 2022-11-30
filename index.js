@@ -119,8 +119,10 @@ Use the addReview function below to do the following:
 
 
 function addReview(arr, name, rating, feedback){
-  arr.push(reviews, "Billy", 2, "Lame food!");
+  arr.push({name, rating, feedback});
+  return arr;
 }
+console.log(addReview(reviews, 'Billy', 2, 'Lame food!'));
 
 
 
@@ -155,9 +157,10 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
+function getLastReview(arr) {
+  return `${arr[arr.length - 1].name} gave the restaurant a ${arr[arr.length - 1].rating} star review, and their feedback was: ${arr[arr.length - 1].feedback}`;
 } 
+console.log(getLastReview(reviews));
 
 
 
